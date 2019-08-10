@@ -1,7 +1,7 @@
 def my_collect(array)
   counter = 0
   collection = []
-  array.collect do |name|
+  while counter < array.length
     yield (my_collect[name])
     counter += 1
   end
